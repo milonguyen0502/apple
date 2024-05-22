@@ -1,0 +1,259 @@
+body{
+    height: 100%;
+}
+header{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.884);
+    padding: 1px;
+}
+header p{
+    font-size: 14px;
+    color: white;
+    margin-top: 1%;
+}
+.home-img img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+.home-img{
+    position: relative;
+    margin-bottom: 10px;
+}
+.button-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.home-img .home-btn{
+    background-color: rgb(0, 119, 255);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;         
+}
+.home-img .home-btn2{
+    background-color:black;
+    border: 1.5px solid rgb(0, 119, 255);
+    color: rgb(0, 119, 255);
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;  
+}
+.home-img .home-btn2:hover{
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+.fix-h1{
+    color: white;
+    font-size: 55px;
+}
+.fix-pElement{
+    color: white;
+    font-size: 28px;
+}
+.fix-pElement2{
+    color: gray;
+    font-size: 20px;
+}
+.fix-h1-2{
+    color: black;
+    font-size: 55px;
+}
+.fix-pElement-2{
+    color: black;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1024px){
+    .fix-h1{
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .fix-pElement{
+        color: white;
+        font-size: 22px;
+
+    }
+    .fix-h1-2{
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .fix-pElement-2{
+        color: black;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 765px){
+    .fix-h1{
+        color: white;
+        font-size: 30px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+    .fix-pElement{
+        color: white;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .fix-h1-2{
+        color: black;
+        font-size: 40px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+    .fix-pElement-2{
+        color: black;
+        font-size: 22px;
+        white-space: nowrap;
+    }
+    .home-img .home-btn{
+        background-color: rgb(0, 119, 255);
+        color: white;
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+        text-align: center;         
+    }
+}
+/* grid */
+.grid-img{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    margin: 10px;
+}
+.grid-home-img img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+.grid-home-img{
+    position: relative;
+    margin-top: 10px;
+}
+.grid-button-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.grid-home-img .grid-home-btn{
+    background-color: rgb(0, 119, 255);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;         
+}
+.grid-home-img .grid-home-btn2{
+    background-color:black;
+    border: 1.5px solid rgb(0, 119, 255);
+    color: rgb(0, 119, 255);
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;  
+}
+.grid-home-img .grid-home-btn2:hover{
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+@media screen and (max-width: 1024px){
+    .grid-button-container h1{
+        font-size: 28px;
+    }
+    .grid-button-container p{
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    .grid-home-img img{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 765px){
+    .grid-img{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto auto auto;
+        gap: 10px;
+        margin: 10px;
+    }
+    .grid-home-img img{
+        height: 500px;      
+    }
+}
+/* crs */
+.carousel-item {
+    position: relative;
+  }
+  
+  .button-container-crs {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 30px; /* Khoảng cách giữa các nút */
+  }
+  
+  .button-container-crs .btn-crs {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center; 
+  }
+@media screen and (max-width: 1024px){
+    .button-container-crs .btn-crs {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+        text-align: center; 
+      }
+      .button-container-crs{
+        left: 30%;
+      }
+}
+@media screen and (max-width: 765px){
+    .button-container-crs h2{
+        display: none;
+    }
+    .carousel-item img{
+        height: 400px;
+        object-fit: cover;
+    }
+    .button-container-crs{
+        left: 50%;
+        white-space: nowrap;
+      }
+}
